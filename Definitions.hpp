@@ -1,0 +1,6 @@
+#ifndef DEFINITIONS_HPP
+#define DEFINITIONS_HPP
+
+#define IMAGE_FILENAME_MAX_LENGTH 512
+
+#endif
