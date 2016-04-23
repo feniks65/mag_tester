@@ -8,6 +8,7 @@
 Mat Preparator::prepare(char* pathToImage, char *outputFilename)
 {
 	Mat image, gray_image, after_threshold;
+
 	char outputFullPath[IMAGE_FILENAME_MAX_LENGTH] = {0};
 
 	image = imread( pathToImage, 1 );
