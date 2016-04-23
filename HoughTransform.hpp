@@ -3,9 +3,12 @@
 
 #include "Tester.hpp"
 
-class HoughTransform : protected Tester
-{
+using namespace cv;
 
+class HoughTransform// : protected Tester
+{
+public:
+	Mat transform(Mat inputImage);
 };
 
 

@@ -16,16 +16,18 @@ int main()
 {
 	const char *exampleSample = "probki/SkanyRazem/dokument004.jpg";
 	const char *windowName = "probka";
+	
 	Mat preparedImage;
-
 	Preparator samplePrep;
+	HoughTransform HoughTransformation;
 
 	preparedImage = samplePrep.prepare(exampleSample);
+
+	HoughTransformation.transform(preparedImage);
 
 	namedWindow( windowName, CV_WINDOW_NORMAL );
 
 	imshow(windowName, preparedImage);
-
 
 //wait to see the result
   while(true)
