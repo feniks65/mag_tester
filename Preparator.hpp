@@ -9,7 +9,8 @@ class Preparator
 {
 private:
 	char pathToSample[IMAGE_FILENAME_MAX_LENGTH];
-	static int const threshold_value = 0;
+
+	static int const threshold_value = 0; //HERE define threshold
 
   /* 0: Binary
      1: Binary Inverted
