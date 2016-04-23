@@ -1,13 +1,12 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
-#include <string>
 
 #include "Definitions.hpp"
 #include "Preparator.hpp"
 
 using namespace cv;
 
-Mat Preparator::prepare(char* pathToImage)
+Mat Preparator::prepare(const char* pathToImage)
 {
 	Mat image, gray_image, after_threshold;
 
