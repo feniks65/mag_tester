@@ -1,5 +1,5 @@
-#ifndef HOUGHTRANSFORM_HPP
-#define HOUGHTRANSFORM_HPP
+#ifndef PREPARATOR_HPP
+#define PREPARATOR_HPP
 
 #include "Definitions.hpp"
 

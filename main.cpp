@@ -4,9 +4,10 @@
 #include <iostream>
 #include "Tester.hpp"
 #include "Preparator.hpp"
+#include "HoughTransform.hpp"
 #include "AlgHistogram.hpp"
 #include "EnergyMap.hpp"
-#include "HoughTransform.hpp"
+
 
 
 using namespace std;
@@ -19,11 +20,11 @@ int main()
 	
 	Mat preparedImage;
 	Preparator samplePrep;
-	HoughTransform HoughTransformation;
+	HoughTransform hg;
 
 	preparedImage = samplePrep.prepare(exampleSample);
 
-	HoughTransformation.transform(preparedImage);
+	hg.transform(preparedImage);
 
 	namedWindow( windowName, CV_WINDOW_NORMAL );
 

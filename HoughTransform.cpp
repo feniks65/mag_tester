@@ -20,4 +20,5 @@ Mat HoughTransform::transform(Mat inputImage)
     	Vec4i l = lines[i];
     	line( inputImage, Point(l[0], l[1]), Point(l[2], l[3]), Scalar(0,0,255), 3, CV_AA);
 	}
+  	return inputImage;
 }

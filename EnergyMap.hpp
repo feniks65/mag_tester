@@ -5,7 +5,8 @@
 
 class EnergyMap : protected Tester
 {
-
+public:
+	EnergyMap();
 };
 
 

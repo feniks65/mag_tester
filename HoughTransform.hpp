@@ -8,6 +8,10 @@ using namespace cv;
 class HoughTransform// : protected Tester
 {
 public:
+	HoughTransform()
+	{
+
+	}
 	Mat transform(Mat inputImage);
 };
 
