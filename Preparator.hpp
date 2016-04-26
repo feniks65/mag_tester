@@ -26,6 +26,7 @@ public:
 	//Preparator(char* pathToImage, char *outputFilename);
 
 	Mat prepare(const char* pathToImage);
+	Mat blur(Mat inputImage);
 };
 
 

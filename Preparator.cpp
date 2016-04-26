@@ -18,3 +18,12 @@ Mat Preparator::prepare(const char* pathToImage)
 
 	return after_threshold;
 }
+
+Mat Preparator::blur(Mat inputImage)
+{
+	Mat outputImage;
+
+	cv::blur(inputImage, outputImage, cv::Size(25, 25));
+
+	return outputImage;
+}
