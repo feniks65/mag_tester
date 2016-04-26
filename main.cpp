@@ -18,17 +18,17 @@ int main()
 	const char *exampleSample = "probki/SkanyRazem/dokument004.jpg";
 	const char *windowName = "probka";
 	
-	Mat preparedImage;
+	Mat preparedImage, img;
 	Preparator samplePrep;
 	HoughTransform hg;
 
 	preparedImage = samplePrep.prepare(exampleSample);
 
-	hg.transform(preparedImage);
+	img = hg.transform(preparedImage);
 
 	namedWindow( windowName, CV_WINDOW_NORMAL );
 
-	imshow(windowName, preparedImage);
+	imshow(windowName, img);
 
 //wait to see the result
   while(true)
