@@ -35,7 +35,7 @@ int main()
   {
     int c;
     c = waitKey( 20 );
-    if( (char)c == 27 )
+    if( (char)c == 27 )//if ESC triggered then exit the image window
       { break; }
    }
 
