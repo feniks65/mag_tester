@@ -30,15 +30,17 @@ warpAffine(inputImage, outputImage, rot_mat, dst_sz);
 Mat AlgHistogram::drawChart(Mat inputImage)
 {
   Mat outputImage;
-  
+  //write histogram
   
   return outputImage;
 }
 
 Mat AlgHistogram::transform(Mat inputImage)
 {
-  Mat outputImage;
+  Mat outputImage, rotatedImage, chartImage;
   
+  rotatedImage = this->rotate(inputImage);
+  chartImage = this->drawChart(rotatedImage);
   
-  return outputImage;
+  return chartImage;
 }
