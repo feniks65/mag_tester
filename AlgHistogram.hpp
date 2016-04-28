@@ -7,7 +7,7 @@ class AlgHistogram : protected Tester
 {
 private:
 	Mat rotate(Mat inputImage);
-	Mat drawHistogram(Mat inputImage);
+	Mat drawChart(Mat inputImage);
 public:
 	Mat transform(Mat inputImage);
 };
