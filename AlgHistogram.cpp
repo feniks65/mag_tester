@@ -14,8 +14,16 @@ using namespace cv;
 Mat AlgHistogram::rotate(Mat inputImage)
 {
   Mat outputImage;
-  
-  
+  //=====================
+  double angle = 90;  // or 270
+Size src_sz = inputImage.size();
+Size dst_sz(src_sz.height, src_sz.width); 
+
+int len = max(inputImage.cols, inputImage.rows); 
+Point2f center(len/2., len/2.);
+Mat rot_mat = getRotationMatrix2D(center, angle, 1.0);
+warpAffine(inputImage, outputImage, rot_mat, dst_sz);
+//=============================
   return outputImage;
 }
 
