@@ -23,7 +23,7 @@ Mat Preparator::blur(Mat inputImage)
 {
 	Mat outputImage;
 
-	cv::blur(inputImage, outputImage, cv::Size(25, 25));
+	cv::blur(inputImage, outputImage, cv::Size(50, 50));
 
 	return outputImage;
 }
