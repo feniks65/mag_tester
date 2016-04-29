@@ -31,7 +31,10 @@ Mat AlgHistogram::drawChart(Mat inputImage)
 {
   Mat outputImage;
   //write histogram
-  
+  int* histogram = new int[width]; 
+for(i=0; i<width; i++)
+   histogram[i] = height - countNonZero(inputImage.col(i));
+
   return outputImage;
 }
 
